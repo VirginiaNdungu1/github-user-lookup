@@ -1,8 +1,12 @@
+body {
+  color: #154360;
+}
+
 .gitUser-Intro {
   background-image: url("./../assets/backgroundImage.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-bottom: 170px;
+  padding-bottom: 15%;
   /*margin-left: 3px*/
   margin-left: -3%;
   margin-right: -3%;
@@ -26,7 +30,7 @@
   height: 100%;
   margin-top: 2%;
   margin-left: 10%;
-  media-right: 10%;
+  margin-right: 10%;
   margin-bottom: 3%;
   box-shadow: 1em 1em 1em 1em #ddd;
   /*background-color: #EBEDEF;*/
@@ -38,4 +42,35 @@
   padding: 10px;
   height: 70%;
   margin-left: 5%;
+  color: #154360;
 }
+
+#contact-bar {
+  /*background-image: url("./../assets/backgroundImage2.jpg");*/
+  background-color: #A9C5F5;
+  background-size: 100% 100%;
+  /*margin-top: 2%;*/
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  /*margin-bottom: 0%;*/
+  text-align: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-bottom: 170px;
+  opacity: 10%;
+}
+
+#contact-bar p {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+
+/*#contact-bar img {
+  padding: 10px;
+}*/
