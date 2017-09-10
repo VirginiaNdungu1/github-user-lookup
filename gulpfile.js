@@ -75,6 +75,7 @@ gulp.task("build", ["clean"], function() {
     gulp.start('jsBrowserify');
   }
   gulp.start('bower');
+  gulp.start('cssBuild');
 });
 // task server
 gulp.task("server", function() {
@@ -101,3 +102,12 @@ gulp.task("bowerBuild", ["bower"], function() {
 gulp.task("htmlBuild", function() {
   browserSync.reload();
 })
+
+gulp.task("cssBuild", function() {
+  return gulp.src(["scss/*.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("./build/css"))
+    .pipe(browserSync.stream())
+});

@@ -1,0 +1,41 @@
+.gitUser-Intro {
+  background-image: url("./../assets/backgroundImage.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 170px;
+  /*margin-left: 3px*/
+  margin-left: -3%;
+  margin-right: -3%;
+  text-align: left;
+  color: #154360;
+  /*margin: 3%;*/
+  /*height: 500;
+  width: 1058;*/
+}
+
+.gitUser-Intro h2 {
+  padding-top: 30%;
+  padding-left: 5%;
+  font-size: 300%;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin-top: 2%;
+  margin-left: 10%;
+  media-right: 10%;
+  margin-bottom: 3%;
+  box-shadow: 1em 1em 1em 1em #ddd;
+  /*background-color: #EBEDEF;*/
+}
+
+.flex-item {
+  /*background-color: cornflowerblue;*/
+  width: 100%;
+  padding: 10px;
+  height: 70%;
+  margin-left: 5%;
+}

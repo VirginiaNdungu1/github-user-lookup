@@ -2,26 +2,39 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="build/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="build/css/vendor.css">
+
   <meta charset="utf-8">
   <title>Github User Lookup</title>
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h2>GITHUB USER LOOKUP</h2>
+  <div class="container container-fluid">
+    <div class="gitUser-Intro">
+      <h2>GITHUB USER LOOKUP</h2>
+    </div>
+
   </div>
-  <div class="container">
-    <form class="get-git-user">
-      <label for="gitUsername">Username:</label>
-      <input id="gitUsername" type="text" placeholder="Enter your github username" class="formcontrol" required>
-      <button class="btn-success" id="userRepos">Get User Repository</button>
-    </form>
+  <div class="flex-container">
+    <div class="flex-item">
+      <form class="get-git-user">
+        <label for="gitUsername">Username:</label>
+        <input id="gitUsername" type="text" placeholder="Enter your github username" class="formcontrol" required>
+        <button class="btn-success" id="userRepos">Get User Repository</button>
+      </form>
+    </div>
   </div>
-  <div id="get-user-repos">
-    <h3>User's Public Repositories:</h3>
+
+  <div class="flex-container">
+    <div class="flex-item">
+      <div id="get-user-repos">
+        <h3>User's Public Repositories:</h3>
+      </div>
+    </div>
   </div>
+
   <div class="jumbotron">
     <h3>I am footer</h3>
   </div>
