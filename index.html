@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="build/css/vendor.css">
   <meta charset="utf-8">
   <title>Github User Lookup</title>
 </head>
@@ -13,16 +15,21 @@
   <div class="container">
     <form class="get-git-user">
       <label for="gitUsername">Username:</label>
-      <input id="gitUsername" type="text" placeholder="Enter your github username" class="formcontrol">
-      <button type="submit" name="btnSubmit">Submit</button>
+      <input id="gitUsername" type="text" placeholder="Enter your github username" class="formcontrol" required>
+      <button class="btn-success" id="userRepos">Get User Repository</button>
     </form>
   </div>
   <div id="get-user-repos">
-    <h3>User's Public Repositories</h3>
+    <h3>User's Public Repositories:</h3>
   </div>
   <div class="jumbotron">
     <h3>I am footer</h3>
   </div>
 </body>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+<!--   <script type="text/javascript" src="vendor.min.js"></script> -->
+<script type="text/javascript" src="build/js/app.js"></script>
 
 </html>
