@@ -10,13 +10,15 @@ Githubuser = function() {
 //Create constructor with method getGithubUser()
 Githubuser.prototype.getGithubUser = function(gitUser) {
   // get github user
-  $.get("https://api.github.com/users/" + gitUser + "?access_token=" + apiKey, (function(results) {
+  $.get("https://api.github.com/users/" + gitUser + "?access_token=" + apiKey).then(function(results) {
     // console.log(results.name);
     // console.log(results.bio);
-    $('#get-user-repos').prepend("<p>" + "Github User: " + results.name + "</p></br>" + "<p>" + "Github User Status: " + results.bio + "</p></br>" + "<p>" + "Github username: " + gitUser + "</p></br>");
-  }));
+    $("#get-user-repos").prepend("<p>" + "Github User: " + results.name + "</p></br>" + "<p>" + "Github User Status: " + results.bio + "</p></br>" + "<p>" + "Github username: " + gitUser + "</p></br>");
+  }).fail(function(error) {
+    $("#get-user-repos").text(error.responseJSON.message);
+  });
   //get user's repositories
-  $.get("https://api.github.com/users/" + gitUser + "/repos" + "?access_token=" + apiKey, (function(responses) {
+  $.get("https://api.github.com/users/" + gitUser + "/repos?access_token=" + apiKey).then(function(responses) {
     console.log(responses);
     console.log(JSON.stringify(responses));
     responses.forEach(function(response) {
@@ -29,8 +31,10 @@ Githubuser.prototype.getGithubUser = function(gitUser) {
       // console.log(response.html_url);
       // console.log(response.description);
     });
-  }));
-}
+  }).fail(function(error) {
+    $("#get-user-repos").text(error.responseJSON.message);
+  });
+};
 exports.GithubuserModule = Githubuser;
 
 },{"./../.env":1}],3:[function(require,module,exports){
