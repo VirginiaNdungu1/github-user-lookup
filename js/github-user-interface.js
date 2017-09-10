@@ -1,6 +1,10 @@
-var apiKey = require('./../.env').apiKey;
+//require the github-user.js file here
+var Githubuser = require("./../js/github-user.js").GithubuserModule;
 
 $(document).ready(function() {
+  var currentGithubUserObject = new Githubuser();
+  currentGithubUserObject.getGithubUser();
+
   $('#userRepos').click(function(event) {
     console.log("grooot");
     event.preventDefault();
