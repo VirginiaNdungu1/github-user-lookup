@@ -1,69 +1,47 @@
 # github-user-lookup
 Application that allows one to view a github user's public repositories
 
-Getting Started
+# Description
+An online application that allows users to view the profile of a github user.
+The application also lists all the public repositories of the github user selected.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This is a fun way of learing how to play the ping-pong game.
+Enjoy!
 
-Prerequisites
+# Known Bugs
 
-What things you need to install the software and how to install them
+No known bugs.
 
-Give examples
-Installing
+# Specifications For The Project
 
-A step by step series of examples that tell you have to get a development env running
+## The application consists of the following features:
 
-Say what the step will be
+Allows user to enter github username 
 
-Give the example
-And repeat
+Display the github username
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+Pick the name of github user, status an number of public repositories 
 
-Running the tests
+Display the name of github user
 
-Explain how to run the automated tests for this system
+Display status of github user
 
-Break down into end to end tests
+Display number of public repositories for user
 
-Explain what these tests test and why
+Allows user to see the public repositories of the user
 
-Give an example
-And coding style tests
+Pick the name, url and description of the repository
 
-Explain what these tests test and why
+Display the name, url and description of the repository
 
-Give an example
-Deployment
+# Technologies Used
 
-Add additional notes about how to deploy this on a live system
+HTML
+Javascript
+Css
+jQuery
 
-Built With
+#  click here Github User Lookup](https://virginiandungu1.github.io/github-user-lookup/) to view the Github User Lookup.
+# License
 
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Versioning
-
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-Authors
-
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-
-Hat tip to anyone who's code was used
-Inspiration
-etc
+# MIT (c) 2017 [Virginia Ndung'u](https://github.com/VirginiaNdungu1/github-user-lookup)
