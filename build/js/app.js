@@ -24,16 +24,18 @@ Githubuser.prototype.getGithubUser = function(gitUser) {
     console.log(JSON.stringify(responses));
     responses.forEach(function(response) {
       if (response.description === null) {
-        $("#get-user-repos").append("<ol>" + response.name + "</ol>" + "<p>" + response.html_url + "</p>" + "<p>" + "Oooopss!! Repository Description not found !!!" + "</p></br>");
+        $("#get-user-repos").append("<ol>" + response.name + "</ol>" + "<a href =" +
+          response.html_url + ">" + " Oooopss!! Repository Description NOT Found!!!");
       } else {
-        $("#get-user-repos").append("<ol>" + response.name + "</ol>" + "<p>" + response.html_url + "</p>" + "<p>" + response.description + "</p></br>");
+        $("#get-user-repos").append("<ol>" + response.name + "</ol>" + "<a href =" +
+          response.html_url + ">" + response.description);
+
       }
+    }).fail(function(error) {
+      $("#get-user-repos").text(error.responseJSON.message);
     });
-  }).fail(function(error) {
-    $("#get-user-repos").text(error.responseJSON.message);
   });
 };
-
 exports.GithubuserModule = Githubuser;
 
 },{"./../.env":1}],3:[function(require,module,exports){
