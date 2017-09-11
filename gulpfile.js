@@ -55,8 +55,13 @@ gulp.task("bowerJS", function() {
     .pipe(uglify())
     .pipe(gulp.dest("./build/js"))
 });
+//task includeAssets
+gulp.task("includeAssets", function() {
+  return gulp.src(["./assets/*.jpg", "./assets/*.png"])
+    .pipe(gulp.dest("./build/assets"));
+})
 // task bowerCSS
-gulp.task("bowerCSS", function() {
+gulp.task("bowerCSS", ["includeAssets"], function() {
   return gulp.src(lib.ext("css").files)
     .pipe(concat("vendor.css"))
     .pipe(gulp.dest("./build/css"));
