@@ -50,10 +50,10 @@ gulp.task("minifyScripts", ["jsBrowserify"], function() {
 });
 //task bowerJS
 gulp.task("bowerJS", function() {
-  return gulp.src(lib.ext("js").files)
-    .pipe(concat("vendor.min.js"))
+  return gulp.src(lib.ext('js').files)
+    .pipe(concat('vendor.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest("./build/js"))
+    .pipe(gulp.dest('./build/js'));
 });
 //task includeAssets
 gulp.task("includeAssets", function() {
